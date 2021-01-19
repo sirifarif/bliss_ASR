@@ -1,0 +1,6 @@
+root: "{{VIRTUAL_ENV}}/bliss_ASR.clam"
+SCRATCHDIRECTORY: "{{root}}/scratchDir"
+OUTPUTDIRECTORY: "{{root}}/outputDir"
+RESOURCEDIRECTORY: "{{VIRTUAL_ENV}}/opt/bliss_asr_decoder"
+port: 8805
+# root: "/vol/tensusers/akhan/webservices/writable/bliss_ASR"

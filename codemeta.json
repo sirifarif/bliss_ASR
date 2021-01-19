@@ -1,0 +1,64 @@
+{
+    "@context": [
+        "https://doi.org/10.5063/schema/codemeta-2.0",
+        "http://schema.org",
+        {
+            "entryPoints": { "@reverse": "schema:actionApplication" },
+            "interfaceType": { "@id": "codemeta:interfaceType" }
+        }
+    ],
+    "@type": "SoftwareSourceCode",
+    "identifier": "bliss_ASR",
+    "name": "Dutch Automatic Speech Recognition",
+    "version": "0.1",
+    "description": "ASR for Dutch.",
+    "license": "unknown",
+	"url": "https://github.com/sirifarif/bliss_ASR",
+    "producer": {
+        "@id": "https://www.ru.nl/clst",
+        "@type": "Organization",
+        "name": "Centre for Language and Speech Technology",
+        "url": "https://www.ru.nl/clst",
+        "parentOrganization": {
+            "@id": "https://www.ru.nl/cls",
+            "@type": "Organization",
+            "name": "Centre for Language Studies",
+            "url": "https://www.ru.nl/cls",
+            "parentOrganization": {
+                "@id": "https://www.ru.nl",
+                "name": "Radboud University",
+                "@type": "Organization",
+                "url": "https://www.ru.nl",
+                "location": {
+                    "@type": "Place",
+                    "name": "Nijmegen"
+                }
+            }
+
+        }
+    },
+    "author": [
+		{
+			"@type": "Person",
+			"givenName": "Arif",
+			"familyName": "Khan",
+			"email": "a.khan@let.ru.nl",
+			"affiliation": { "@id": "https://www.ru.nl/clst" }
+		}
+	],
+	"sourceOrganization": { "@id": "https://www.ru.nl/clst" },
+	"operatingSystem": "POSIX",
+	"codeRepository": "https://github.com/sirifarif/bliss_ASR",
+    "softwareRequirements": [
+        {
+			"@type": "SoftwareApplication",
+			"identifier": "kaldi",
+			"name": "kaldi"
+		}
+	],
+	"readme": "https://github.com/sirifarif/bliss_ASR/blob/main/README.md",
+	"issueTracker": "https://github.com/sirifarif/bliss_ASR/issues",
+	"developmentStatus": "active",
+	"keywords":  [ "nlp", "speech recognition", "dutch" ],
+	"dateCreated": "2021-01-19"
+}
